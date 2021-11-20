@@ -6,7 +6,7 @@ import AudiolibrosDetails from "./components/AudiolibrosDetails.vue";
 const routes = [
   { path: "/", component: Home },
 	
-  { path: "/audiolibros", component: AudiolibrosIndex },
+  { path: "/audiolibros", component: AudiolibroIndex },
   { path: "/audiolibros/show/:id", 
     component: AudiolibrosDetails, props: {show:true} },
   { path: "/audiolibros/edit/:id", 
