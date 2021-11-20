@@ -11,8 +11,8 @@
 	   </tr>
        </thead><tbody>
        <tr v-for='audiolibro in audiolibros'>
-       <td>{{audiolbro.nombreAudio}}</td>
-       <td>{{audiolbro.audio}}</td>
+       <td>{{audiolibro.nombreAudio}}</td>
+       <td>{{audiolibro.audio}}</td>
        <td>{{audiolibro.autor}}</td>
        <td>
        <router-link class="button"

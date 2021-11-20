@@ -38,7 +38,7 @@ export default {
   data() {
     return {
       title: "Datos del audiolibro",
-      book: {}
+      audiolibro: {}
     }
   },
   mounted() {
@@ -46,7 +46,7 @@ export default {
     if (route.params.id != null)
       this.findAudiolibro(route.params.id);
     else {
-      this.audiolbro = {
+      this.audiolibro = {
         '_id': Math.floor(Math.random()*100000000),'nombreAudio':'','audio':''};
     }
   },
