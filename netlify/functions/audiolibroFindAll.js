@@ -13,7 +13,7 @@ exports.handler = async (event, context) => {
     const client = await clientPromise;
 
     const audiolibros = await client.db("proyecto").collection("audiolibros").find({}).toArray();
-
+    console.log("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
     return { statusCode: 200, headers, body: JSON.stringify(audiolibros)};
   } catch (error) {
     console.log(error);
