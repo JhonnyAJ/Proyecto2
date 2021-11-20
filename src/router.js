@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "./components/Home.vue";
-import AudiolibrosIndex from "./components/AudiolibrosIndex.vue";
+import AudiolibroIndex from "./components/AudiolibroIndex.vue";
 import AudiolibrosDetails from "./components/AudiolibrosDetails.vue";
 
 const routes = [
