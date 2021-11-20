@@ -16,10 +16,10 @@
        <td>{{audiolibro.autor}}</td>
        <td>
        <router-link class="button"
-         :to="'/audiolibro/show/'+audiolibro._id">Mostrar</router-link>
+         :to="'/audiolibros/show/'+audiolibro._id">Mostrar</router-link>
        &nbsp;
        <router-link class="button"
-         :to="'/audiolibro/edit/'+audiolibro._id">Editar</router-link>
+         :to="'/audiolibros/edit/'+audiolibro._id">Editar</router-link>
        &nbsp;
        <a class="button"
          v-on:click="deleteAudiolibro(audiolibro._id)">Eliminar</a>
@@ -27,7 +27,7 @@
        </tr></tbody>
      </table>
      <router-link class="button button-primary" 
-       to="/audiolibro/create">Nuevo</router-link>
+       to="/audiolibros/create">Nuevo</router-link>
    </div>
   </div>
 </template>

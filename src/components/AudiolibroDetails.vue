@@ -15,10 +15,24 @@
          v-model="audiolibro.audiolibro">
       </div>
      </div>
-     
+
+    <div class="row">
+      <div class="six columns">
+       <label for="titleInput">Nombre del libro</label>
+       <input class="u-full-width" type="text"
+         v-model="audiolibro.nombreLibro">
+      </div>
+     <div class="six columns">
+       <label for="titleInput">Nombre del autor</label>
+       <input class="u-full-width" type="text"
+         v-model="audiolibro.audiolibro">
+     </div>
+     </div>
+
+    
      <div class="row">
       <router-link class="button button-primary" 
-        to="/home">Back</router-link>
+        to="/">Cancelar</router-link>
        <a v-if='edit' class="button button-primary" style="float: right"
          v-on:click="updateAudiolibro(audiolibro._id)">Actualiza</a>
        <a v-if='create' class="button button-primary" style="float: right"
