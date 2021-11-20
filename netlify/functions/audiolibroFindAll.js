@@ -1,3 +1,4 @@
+console.log*("asddddddddddddddddddddsasdasssssssssssssssssssssssssssssssdasds")
 "use strict"
 console.log("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
 const clientPromise = require('./mongoDB');
