@@ -25,7 +25,7 @@
      <div class="six columns">
        <label for="titleInput">Nombre del autor</label>
        <input class="u-full-width" type="text"
-         v-model="audiolibro.audiolibro">
+         v-model="audiolibro.nombreAutor">
      </div>
      </div>
 
