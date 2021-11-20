@@ -7,6 +7,6 @@ import './assets/css/skeleton.css';
 
 const app = createApp(App);
   
-app.config.globalProperties.url = 'https://proyecto-mongo.netlify.app';
+app.config.globalProperties.url = 'https://proyecto2distribuidos.netlify.app';
 
 app.use(router).mount("#app");
