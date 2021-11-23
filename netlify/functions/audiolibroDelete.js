@@ -1,7 +1,8 @@
 "use strict"
 
-const clientPromise = require('./mongoDB');
 const headers = require('./headersCORS');
+
+const rabbitPromise = require('./rabbitMQ');
 
 exports.handler = async (event, context) => {
 
@@ -10,12 +11,14 @@ exports.handler = async (event, context) => {
   }
 	
   try {
-    const client = await clientPromise;
+    
     const id = parseInt(event.path.split("/").reverse()[0]);
 	
-    await client.db("proyecto").collection("audiolibros").deleteOne({_id:id});
-	
-    return { statusCode: 200, headers, body: 'OK'};
+    const channel = await rabbitPromise();
+    const request = `{'method':'DELETE','id': ${id} }`;
+    await channel.sendToQueue("proyecto", Buffer.from(request));
+
+    return { statusCode: 200, headers, body: status};
   } catch (error) {
     console.log(error);s
     return { statusCode: 422, headers, body: JSON.stringify(error) };
