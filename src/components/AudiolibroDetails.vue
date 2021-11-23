@@ -61,7 +61,7 @@ export default {
       this.findAudiolibro(route.params.id);
     else {
       this.audiolibro = {
-        '_id': Math.floor(Math.random()*100000000),'nombreAudio':'','audio':''};
+        '_id': Math.floor(Math.random()*100000000),'nombreAudio':'','audiolibro':''};
     }
   },
   methods: {

@@ -5,6 +5,7 @@
      <table><thead>
        <tr>
          <th>Nombre del Audio</th>
+         <th>Nombre del Libro</th>
         <th>Link del audio</th>
         <th>Autor</th>
         <th class="text-center">Actions</th>
@@ -12,8 +13,9 @@
        </thead><tbody>
        <tr v-for='audiolibro in audiolibros'>
        <td>{{audiolibro.nombreAudio}}</td>
-       <td>{{audiolibro.audio}}</td>
-       <td>{{audiolibro.autor}}</td>
+       <td>{{audiolibro.nombreLibro}}</td>
+       <td>{{audiolibro.audiolibro}}</td>
+       <td>{{audiolibro.nombreAutor}}</td>
        <td>
        <router-link class="button"
          :to="'/audiolibros/show/'+audiolibro._id">Mostrar</router-link>
